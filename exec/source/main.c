@@ -7,6 +7,8 @@
 #include "sub1.h"
 #include "sub2.c"
 
+#include "strings.c"
+
 /**
  * 主程序
  * @return Always Zero
@@ -18,5 +20,9 @@ int main() {
     printf("%s;\n", "=====");
     // 调用不含头文件的函数
     sub2();
+    // 分割线
+    printf("%s;\n", "=====");
+    // 调用同项目下不含头文件的函数
+    echo();
     return 0;
 }
